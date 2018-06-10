@@ -1,0 +1,279 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+
+body, html {
+  height: 100%;
+}
+
+body { 
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0px;
+    background-color:#eee;      
+  }
+
+  body#background {
+    background: url("../images/coast.jpg") no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    /*filter: opacity(50%)*/
+    }
+
+    img {
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    }
+
+    
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase
+}
+
+.navbar .nav {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem
+}
+
+.navbar-inverse {
+  background-color: #505050 
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  background-color: #101010 
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #101010 
+}
+
+.dropdown-menu {
+  background-color:	#101010 
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-color: #101010 
+}
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-image: none;
+}
+.dropdown-menu>li>a {
+    color: #FFFFFF
+  }
+  
+  .dropdown-menu>li>a:hover,
+  .dropdown-menu>li>a:focus {
+    color: #FFCC00
+  }
+
+.navbar-inverse {
+  background-image: none;
+}
+
+
+
+.navbar-inverse {
+  border-color: #101010 
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #FFCC00
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #FFFFFF
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: #FFCC00
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  color: #FFCC00
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+  color: #FFCC00
+}
+
+
+
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+  border-top-color: #FFFFFF
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+  border-top-color: #FFFFFF
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+  border-bottom-color: #FFFFFF
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+  border-bottom-color: #FFFFFF
+}
+
+main{
+    margin-top: 100px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.hero{
+  font-family: 'Montserrat' sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.tab-list { display: none;}
+	.tabs.enabled .tab-heading { cursor:pointer; }
+	.tabs.enabled .tab-heading.active-tab-heading { cursor: default; }
+	.hidden-mobile { display: none;}
+}
+
+@media (min-width: 768px) {
+	.tabs.enabled .tab-heading { display: none;}
+	.tab-list li { display: inline; cursor:pointer;}
+	.hidden-mobile { display: block !important;}
+}
+
+/* OPTIONAL - Basic Skin */
+
+.tab-panel { margin-bottom:50px; padding-top: 10px; font-weight: bold;}
+.tabs.enabled .tab-heading:focus,
+.tabs.enabled .tab-list li:focus { outline: 1px solid #ccc;  }
+.tabs.enabled .tab-heading.active-tab-heading:focus,
+.tabs.enabled .tab-list li.active-tab:focus { outline: none !important;}
+
+
+@media (max-width: 767px) {
+	.tabs.enabled .tab-heading { 
+		padding: 0.5em; border-radius: 5px; border: 1px solid #ccc; box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+		background: #ddd;
+		position: relative;
+	}
+
+	.tabs.enabled .tab-heading:after {
+		content:"";
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 40%;
+		width: 0px; 
+		height: 0px; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid #000;
+	}
+	.tabs.enabled .tab-heading:hover,
+	.tabs.enabled .tab-heading.active-tab-heading:hover { background-color: #efefef}
+	.tabs.enabled .tab-heading.active-tab-heading { background: #fff;}
+	.tabs.enabled .tab-heading.active-tab-heading:after {
+		border-bottom: 10px solid #000;
+		border-top:0;
+	 }
+}
+
+@media (min-width: 768px) {
+	.tab-list { font-size: 1.2em; font-family: 'Montserrat', sans-serif; font-weight: bold; text-transform: uppercase; margin: 2em 0 0 0; padding: 0;border-bottom: 1px solid #ddd; padding-bottom:11px; line-height: 1em;}
+	.tab-list li { background: #eee; padding: 10px 20px;  margin-right: 1em; border-top-left-radius: 5px; border-top-right-radius: 5px;border: 1px solid #ddd; }
+	.tab-list li:hover {background: #efefef }
+	.tab-list li.active-tab {  background: #fff; border-bottom-color: #fff;}
+}
+
+/* END - Optional - Basic Skin */
+
+footer {
+    width:100%;
+    padding:20px;
+    padding-bottom:16px;
+    background:#505050;
+    color:white;
+    font-weight:bold;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align:center;
+    position:fixed;    /*Here's what sticks it*/
+    bottom:0;          /*to the bottom of the body*/
+    left:0;            /*and to the left of the body.*/    
+    border-top:1px solid #101010;
+  }
+.card-container {
+    display: flex;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0px 1px 5px #555;
+    background-color: white;
+    /*display: flex;
+  
+  flex-direction: column;
+  justify-content: flex-end;
+    min-height: 320px;*/
+    /*position: relative;*/
+}
+.card__title {
+    font-size: 1.2em;
+    padding: .5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card__description {
+    padding: .5rem;
+    line-height: 1.6em;
+}
+.card button {
+    display: block;
+    background-color: tomato;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s ease-out;
+}
+
+.card__thumbnail img {
+  height: 100%;
+  width: 100%;
+}
+
+.links {
+  /*position: absolute;
+  bottom: 0;
+  left: 33.3%;*/
+  padding: 10px;
+  text-align: center;
+}
+.links a{color: inherit; text-decoration: none;}
+.links a:visited { text-decoration: none; }
+.links a:hover { text-decoration: none; color: #FFCC00 }
+.links a:focus { text-decoration: none; }
