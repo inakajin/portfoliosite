@@ -17,18 +17,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-    /*filter: opacity(50%)*/
     }
-
-    /*img {
-        filter: gray; /* IE6-9 */
-        /*-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-        /*filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-    /*}
-    */
-
     
-
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase
@@ -163,7 +153,7 @@ main{
 	.hidden-mobile { display: block !important;}
 }
 
-/* OPTIONAL - Basic Skin */
+/* OPTIONAL - Tab Styles */
 
 .tab-panel { margin-bottom:50px; padding-top: 10px; font-weight: bold;}
 .tabs.enabled .tab-heading:focus,
@@ -207,7 +197,7 @@ main{
 	.tab-list li.active-tab {  background: #fff; border-bottom-color: #fff;}
 }
 
-/* END - Optional - Basic Skin */
+/* END - Optional Styles */
 
 footer {
     width:100%;
@@ -234,13 +224,6 @@ footer {
 .card {
     box-shadow: 0px 1px 5px #555;
     background-color: #fff;
-    /*position: relative;
-    display: flex;
-  
-  flex-direction: column;
-  justify-content: flex-end;
-    min-height: 320px;*/
-    /*position: relative;*/
 }
 .card__title {
     font-size: 1.2em;
@@ -252,14 +235,8 @@ footer {
 .card__description {
     padding: .5rem;
     line-height: 1.6em;
-    /*position: absolute;
-    bottom:0;*/
 }
 
-/*.card__description .links{
-  position: absolute;
-  top: 0;
-}*/
 .card button {
     display: block;
     background-color: tomato;
@@ -276,9 +253,6 @@ footer {
 }
 
 .links {
-  /*position: absolute;
-  bottom: 0;
-  left: 33.3%;*/
   padding: 10px;
   text-align: center;
 }
