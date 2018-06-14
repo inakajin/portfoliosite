@@ -129,7 +129,6 @@ body#background {
 main {
   margin-top: 100px;
   padding: 10px;
-  overflow-y: scroll;
 }
 
 .hero {
